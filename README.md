@@ -1,6 +1,7 @@
 # ng-cli-demo
 This is a sample application that is created to build, test and manage an angular app using Angular CLI.
 
+GENERATING CODE FROM BLUEPRINTS:
 Components:
 ng g c customer -d
 ng g c customer
@@ -35,5 +36,10 @@ ng g m login --spec true -d
 ng g m login
 ng g c login -m login/login.module -d
 ng g c login -m login/login.module
+
+TIP: We can set project wide settings too
+ng set defaults.component.flat true
+ng set defaults.directive.flat true
+ng set defaults.styleExt scss
 
 
