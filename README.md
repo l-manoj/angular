@@ -19,3 +19,9 @@ ng g s sales-data
 ng g s sales-data2 -m app.module -d
 ng g s sales-data2 -m app.module
 
+Class, Interface and Enum: 
+ng g cl models/product -d
+ng g cl models/product
+ng g i models/order
+ng g e models/gender
+
