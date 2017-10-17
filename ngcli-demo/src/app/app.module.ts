@@ -8,6 +8,7 @@ import { SearchBoxDirective } from './search-box.directive';
 import { SearchBox2Directive } from './search-box2/search-box2.directive';
 import { SalesDataService } from './sales-data.service';
 import { SalesData2Service } from './sales-data2.service';
+import { CurrencyPipe } from './shared/currency.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SalesData2Service } from './sales-data2.service';
     CustomerComponent,
     Customer2Component,
     SearchBoxDirective,
-    SearchBox2Directive
+    SearchBox2Directive,
+    CurrencyPipe
   ],
   imports: [
     BrowserModule

@@ -25,3 +25,9 @@ ng g cl models/product
 ng g i models/order
 ng g e models/gender
 
+Pipe:
+ng g p shared/currency -d
+ng g p shared/currency
+
+
+
