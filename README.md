@@ -29,5 +29,11 @@ Pipe:
 ng g p shared/currency -d
 ng g p shared/currency
 
+Module:
+ng g m login -d
+ng g m login --spec true -d
+ng g m login
+ng g c login -m login/login.module -d
+ng g c login -m login/login.module
 
 

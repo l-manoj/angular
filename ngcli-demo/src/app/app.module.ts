@@ -9,6 +9,7 @@ import { SearchBox2Directive } from './search-box2/search-box2.directive';
 import { SalesDataService } from './sales-data.service';
 import { SalesData2Service } from './sales-data2.service';
 import { CurrencyPipe } from './shared/currency.pipe';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CurrencyPipe } from './shared/currency.pipe';
     CurrencyPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,LoginModule
   ],
   providers: [SalesDataService, SalesData2Service],
   bootstrap: [AppComponent]
