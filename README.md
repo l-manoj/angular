@@ -13,3 +13,9 @@ ng g d search-box
 ng g d search-box2 --flat false -d
 ng g d search-box2 --flat false
 
+Services:
+ng g s sales-data -d
+ng g s sales-data
+ng g s sales-data2 -m app.module -d
+ng g s sales-data2 -m app.module
+
