@@ -43,3 +43,5 @@ ng set defaults.directive.flat true
 ng set defaults.styleExt scss
 
 
+GENERATING ROUTING FEATURES
+ng new ngcli-routing-demo --routing
