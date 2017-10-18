@@ -45,3 +45,9 @@ ng set defaults.styleExt scss
 
 GENERATING ROUTING FEATURES
 ng new ngcli-routing-demo --routing
+ng g c customers
+ng g c dashboard
+ng g m admin --routing
+ng g c admin
+ng g c admin/users
+ng g c admin/emails
