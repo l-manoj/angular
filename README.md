@@ -51,3 +51,23 @@ ng g m admin --routing
 ng g c admin
 ng g c admin/users
 ng g c admin/emails
+
+Building and Serving 
+
+ng build <options>
+
+Build are stored as bundles or webpack in /dist folder(by default).
+Output folder can be configured in .angular-cli.json file
+Common Build File are below:
+
+Inline.bundle.js       Webpack
+Main.bundle.js         App Code
+Polyfills.bundle.js    Browser polyfills
+Styles.bundle.js       Styles
+Vendor.bundle.js       Angular and vendor files
+
+In order to explore the source in bundles a tool can be used that 
+reveals exactly which modules and classes are in the bundle.
+https://github.com/danvk/source-map-explorer
+Install:  npm install source-map-explorer  --save-dev
+Use: node_modules/.bin/source-map-explorer dist/main.bundle.js
