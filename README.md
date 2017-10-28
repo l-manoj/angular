@@ -71,3 +71,29 @@ reveals exactly which modules and classes are in the bundle.
 https://github.com/danvk/source-map-explorer
 Install:  npm install source-map-explorer  --save-dev
 Use: node_modules/.bin/source-map-explorer dist/main.bundle.js
+
+
+What is build environment and what is build target?
+Build Environment: Indicates which file  to use between environment.ts and environmnet.prod.ts
+Build Target: Defines how and(if) files are optimized 
+
+Comparing Dev and Prod Build Targets 
+                 ng build                        ng build --prod
+Environment      environment.ts                  environment.prod.ts
+Cache busting    Only images referenced in CSS   All build files
+Source maps      Generated                       Not generated
+Extracted CSS    Global CSS output to .js        Yes, to CSS file(s)
+Uglification     No                              Yes
+Tree-Shaking     No                              Yes
+AOT              No                              Yes
+Bundling         Yes                             yes
+			
+Common ng build Options
+Options             Alias               Description
+--sourcemap         -sm                 Generate a source map
+--aot                                   Ahead of time compilation
+--watch              -w                 Watch and rebuild 
+--environment        -e                 Build environment
+--target             -t                 Build Target
+--dev                                   Shortcut for dev env and target
+--prod                                  Shortcut for prod env and target
