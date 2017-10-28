@@ -97,3 +97,21 @@ Options             Alias               Description
 --target             -t                 Build Target
 --dev                                   Shortcut for dev env and target
 --prod                                  Shortcut for prod env and target
+
+Example:
+ng build --aot
+ng build --prod
+ng build --prod -sm
+
+Common ng serve options(plus all ng build options)
+Options         Alias       Description
+--open          -o          Opens in the default browser
+--port          -p          Port to listen to when serving
+--live-reload   -lr         Reload when change occurs
+--ssl                       Serve using HTTPS
+--proxy-config  -pc         Proxy configuration file
+
+In the background Angulsr uses webpack for serving and building. 
+What if you do not want to use CLI for serve/build or 
+what if you want to know what is inside webpack configuration and play with it
+ng eject ---->deletes CLI config with zwebpack config for building and serving 
