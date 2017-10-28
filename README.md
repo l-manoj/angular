@@ -115,3 +115,21 @@ In the background Angulsr uses webpack for serving and building.
 What if you do not want to use CLI for serve/build or 
 what if you want to know what is inside webpack configuration and play with it
 ng eject ---->deletes CLI config with zwebpack config for building and serving 
+
+Testing Angular
+ng test All unit tests(*.spec.ts files)
+
+Common ng test options
+Options                  Alias       Description
+--code-coverage          -cc         Generate code coverage report (default false)
+--colors                             Enable/disable output colorsc(default true)
+--single-run             -sr         Execute tests but no watching (default false)
+--progress                           Log progress to console (default true)
+--sourcemaps             -sm         Generate sourcemaps (defaults true)
+--watch                  -w          Run test 
+
+Code coverage is written to /coverage folder 
+
+ng e2e Compile,serve and run End-to-end tests 
+ng e2e -ee Open protractaror's element explorer(helps debugging)
+
