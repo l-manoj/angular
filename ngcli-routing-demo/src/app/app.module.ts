@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { CustomersComponent } from './customers/customers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminModule } from './admin/admin.module';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import{ MatButtonModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,8 @@ import { AdminModule } from './admin/admin.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
     AdminModule,
     AppRoutingModule
   ],
